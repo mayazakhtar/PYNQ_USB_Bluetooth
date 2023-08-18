@@ -31,3 +31,28 @@ Steps:
    **[ ]**   Enable USB autosuspend for Bluetooth USB devices by default                             
    **[*]**   Broadcom protocol support                             
    **[*]**   Realtek protocol support
+10. Save and Exit. Run **petalinux-build** Create BOOT.BIN and boot the board.
+11. After booting run the following commands.
+    1. **sudo apt-get update**
+    2. **sudo apt-get install bluez**
+    3. **sudo service bluetooth start**
+    4. **sudo service bluetooth status**
+    5. **bluetoothctl**
+    6. **power on**
+    7. **discoverable on**
+    8. **scan on**
+    9. **pair mac_address**
+    10. **quit**
+12. We are going to use bluedot for test. First install bluedot
+    1. **sudo apt install python3-dbus**
+    2. **sudo pip3 install bluedot**
+    3. Also install Bluedot app on your Android mobile.
+13. Open python and run the following code for bluedot  
+    from bluedot import BlueDot  
+    bd = BlueDot()  
+    while True:  
+    &emsp;bd.wait_for_process()  
+    &emsp;print("led on")  
+    &emsp;bd.wait_for_release()  
+    &emsp;print("led off")
+14. Open android app and connect it to your bluetooth device. After connection bluedot will appear on app. Touch this dot to send bluetooth signal.
