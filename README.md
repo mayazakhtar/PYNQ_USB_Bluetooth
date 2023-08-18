@@ -1,9 +1,9 @@
 # PYNQ_USB_Bluetooth
-In this Git we are going to set bluetooth device for Pynq-Z1 board.
-**Software:** Vivado 2019.1, Petalinux 2019.1, Serial Terminal. I'm using Ubuntu 18.04.6 on VMware.                            
-**Hardware:** PYNQ-Z1 board, USB Bluetooth Dongle (CSR 4.0)                                                  
+In this Git we are going to set bluetooth device for Pynq-Z1 board.  
+**Software:** Vivado 2019.1, Petalinux 2019.1, Serial Terminal. I'm using Ubuntu 18.04.6 on VMware.  
+**Hardware:** PYNQ-Z1 board, USB Bluetooth Dongle (CSR 4.0)  
 
-Steps:
+Steps:  
 1. First Download Pynq-Z1 git repo by using following command **git clone --recurse-submodule https://github.com/Xilinx/PYNQ.git**
 2. Now change this repo for 2.5 version by this command **git checkout origin/image_v2.5**
 3. Change directory to sdbuilds **cd <pynq_dir>/sdbuild**
