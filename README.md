@@ -51,7 +51,7 @@ Steps:
     from bluedot import BlueDot  
     bd = BlueDot()  
     while True:  
-    &emsp;bd.wait_for_process()  
+    &emsp;bd.wait_for_press()  
     &emsp;print("led on")  
     &emsp;bd.wait_for_release()  
     &emsp;print("led off")
